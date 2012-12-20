@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>com.example.giallone</groupId>
+    <artifactId>common</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>rules</artifactId>
+  <packaging>jar</packaging>
+  <name>Sample :: Main Project</name>
+  <dependencies>
+    <!-- here just to let Maven Reactor install the missing dependencies before using them in this module -->
+    <dependency>
+      <groupId>com.example.giallone</groupId>
+      <artifactId>dependencies</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <!-- real dependencies -->
+    <dependency>
+      <groupId>com.example.giallone</groupId>
+      <artifactId>dep1</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.example.giallone</groupId>
+      <artifactId>dep2</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+  </dependencies>
+</project>
